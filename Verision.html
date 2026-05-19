@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Desktop & GitHub Pages</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f5f7;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #24292e;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+        }
+
+        h2, h3 {
+            color: #24292e;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .box {
+            background-color: #eef2f5;
+            padding: 20px;
+            border-left: 5px solid #24292e;
+            border-radius: 5px;
+        }
+
+        code {
+            background-color: #ddd;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        pre {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        ul {
+            margin-left: 25px;
+        }
+
+        footer {
+            background-color: #24292e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Introduktion till GitHub Desktop & GitHub Pages</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Uppgiftens mål</h2>
+
+            <p>
+                Syftet med uppgiften är att lära sig använda GitHub Desktop för versionshantering
+                och att publicera en webbsida online med GitHub Pages.
+            </p>
+
+            <p>
+                GitHub Desktop gör det enklare att arbeta med Git och GitHub genom ett mer visuellt
+                och användarvänligt gränssnitt.
+            </p>
+        </section>
+
+        <section>
+            <h2>Del 1: Skapa GitHub-konto och installera GitHub Desktop</h2>
+
+            <div class="box">
+
+                <h3>1. Skapa ett GitHub-konto</h3>
+
+                <p>
+                    Börja med att skapa ett gratis konto på GitHub om du inte redan har ett.
+                </p>
+
+                <h3>2. Installera GitHub Desktop</h3>
+
+                <p>
+                    Ladda ner GitHub Desktop och installera programmet på din dator.
+                    När installationen är klar loggar du in med ditt GitHub-konto.
+                </p>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Del 2: Skapa och ladda upp ett projekt</h2>
+
+            <h3>Vad är ett repository?</h3>
+
+            <p>
+                Ett repository, eller repo, fungerar som en digital mapp där alla filer och ändringar
+                i ett projekt sparas. GitHub gör det möjligt att:
+            </p>
+
+            <ul>
+                <li>Spara projekt och hålla koll på ändringar</li>
+                <li>Samarbeta med andra</li>
+                <li>Återgå till äldre versioner om något går fel</li>
+            </ul>
+
+            <h3>Skapa ett lokalt projekt</h3>
+
+            <p>
+                Skapa en ny mapp på datorn och lägg till en HTML-fil och en CSS-fil.
+            </p>
+
+            <h3>Exempel på HTML-kod</h3>
+
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="sv"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Min första webbsida&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Välkommen till min första webbsida!&lt;/h1&gt;
+    &lt;p&gt;Det här är en webbsida som jag hostar via GitHub.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+        </section>
+
+        <section>
+            <h2>3. Lägg till projektet i GitHub Desktop</h2>
+
+            <div class="box">
+
+                <ul>
+                    <li>Öppna GitHub Desktop och välj <strong>Add local repository</strong>.</li>
+
+                    <li>Välj projektmappen på datorn.</li>
+
+                    <li>
+                        Om ett felmeddelande visas om att mappen inte är ett Git repository,
+                        klicka på <strong>Create a repository</strong>.
+                    </li>
+
+                    <li>
+                        Fyll i information om projektet och klicka sedan på
+                        <strong>Publish repository</strong>.
+                    </li>
+
+                    <li>
+                        Se till att alternativet <strong>Keep this code private</strong>
+                        inte är markerat.
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Commit och synkronisering</h2>
+
+            <p>
+                En commit fungerar som en sparad version av projektet. När man gör en commit
+                sparas alla ändringar som har gjorts lokalt på datorn.
+            </p>
+
+            <h3>Exempel på commitmeddelande</h3>
+
+            <p>
+                Om man lägger till en ny sida som heter “About us” kan commitmeddelandet vara:
+            </p>
+
+            <pre>Add an "About us" page</pre>
+
+            <p>
+                Efter att commiten skapats klickar man på <strong>Push origin</strong>
+                för att synkronisera ändringarna med GitHub.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Publicera sidan med GitHub Pages</h2>
+
+            <div class="box">
+
+                <ul>
+                    <li>Gå till repositoryts inställningar på GitHub.</li>
+
+                    <li>Välj <strong>Pages</strong> under “Code and automation”.</li>
+
+                    <li>Under Source väljer du <strong>Deploy from branch</strong>.</li>
+
+                    <li>Välj branchen <strong>Main</strong> och klicka på Save.</li>
+                </ul>
+
+                <p>
+                    Efter några minuter publiceras webbsidan online via GitHub Pages.
+                </p>
+
+                <p>
+                    Exempel på URL:
+                    <br>
+                    <code>
+                        https://dittanvandarnamn.github.io/minwebbsida
+                    </code>
+                </p>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>6. Reflektion och utvärdering</h2>
+
+            <p>
+                GitHub Desktop gör det enklare att hålla koll på ändringar i ett projekt.
+                Programmet visar tydligt vilka filer som ändrats och gör det enkelt att skapa commits.
+            </p>
+
+            <p>
+                Versionshantering är viktigt eftersom man kan återgå till äldre versioner
+                om något går fel. Det gör också samarbeten enklare eftersom flera personer
+                kan arbeta i samma projekt samtidigt.
+            </p>
+
+            <p>
+                GitHub Pages är en bra lösning för att publicera webbsidor eftersom det är gratis,
+                enkelt att använda och gör det möjligt att snabbt dela projekt online.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GitHub Desktop & GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
